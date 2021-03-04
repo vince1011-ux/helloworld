@@ -1,0 +1,120 @@
+Sub Main()
+
+        Dim string1 As String = "Hello"
+        Dim string2 As String = "World"
+
+        Dim string3 As String = string1 & " " & string2
+
+        Console.WriteLine(string3)
+        Console.ReadLine()
+        
+    End Sub
+
+Sub Main()
+        Dim x As Integer = 2
+
+        If (x = 16) Then
+            Console.WriteLine("16")
+
+        ElseIf (x = 4) Then
+            Console.WriteLine("4")
+
+        ElseIf (x = 0) Then
+            Console.WriteLine("5")
+
+        Else
+            Console.WriteLine("Non of the statement is true haha")
+
+        End If
+        Console.ReadKey()
+
+    End Sub
+
+
+     Sub Main()
+
+        For i As Integer = 0 To 10 Step 2
+            Console.WriteLine(i)
+        Next
+        Console.ReadLine()
+
+
+    End Sub
+
+
+    Dim students() As String = {"bins", "kwistin", "iya", "eme"}
+        Console.WriteLine("Names of Students")
+        For Each name In students
+
+            Console.WriteLine(name)
+        Next
+
+        Console.ReadLine()
+
+
+        Dim x As Integer = 10
+        'while loop
+        Do While (x < 100)
+            Console.WriteLine(x)
+            x = x + 10
+        Loop
+        Console.ReadLine()
+
+         Dim x As Integer = 20
+        ' do while loop
+        Do
+            Console.WriteLine(x)
+            x = x + 10
+        Loop While (x < 20)
+
+        Console.ReadLine()
+
+        Dim color As String = "black"
+        'switch case
+        Select Case color
+            Case "red"
+                Console.WriteLine("the color is red")
+            Case "blue"
+                Console.WriteLine("the color is blue")
+            Case "white"
+                Console.WriteLine("the color is white")
+            Case "yellow"
+                Console.WriteLine("the color is yellow")
+            Case Else
+                Console.WriteLine("the color is not available")
+        End Select
+
+        Console.ReadLine()
+
+
+           Dim name As String, age As Integer
+
+        Console.Write("Name: ")
+        name = Console.ReadLine()
+        Console.Write("Age: ")
+        age = Console.ReadLine()
+
+        '{} used for placeholders
+        Console.WriteLine("Hello {0}, {2}you don't look {1}", name, age, vbCrLf)
+        'Chr(13) & Chr(10) == vbCrLf
+
+        'another method
+        'Console.Write("Hello " & name & "," & " you don't look " & age)
+        Console.ReadLine()
+
+
+         Dim key As ConsoleKeyInfo
+        Console.Write("press a key ")
+        key = Console.ReadKey()
+        Console.WriteLine("{0}you pressed " & key.KeyChar, vbCrLf)
+        Console.Write("Hello")
+        Console.ReadKey()
+
+
+        Dim name As String
+
+        Console.Write("name: ")
+        name = Console.ReadLine()
+
+        Console.WriteLine("{0}{1}{2}", name, vbCrLf, StrDup(Len(name), "1"))
+        Console.ReadLine()
